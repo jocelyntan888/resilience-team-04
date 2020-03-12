@@ -10,25 +10,10 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+ 
  */
-  .bg-1 
-  { 
-    background-color: #1abc9c;
-    color: black;
-  }
-  .bg-2 
-  { 
-    background-color: #474e5d;
-    color: black;
-  }
-  .bg-3 
-  { 
-    background-color: #ffffff;
-    color: #555555;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
+
+ //Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap-sprockets";  
+@import "bootstrap";
+
