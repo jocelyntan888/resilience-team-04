@@ -4,52 +4,115 @@
   <title>Resilience Application </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+  .container 
+  {
+    position: relative;
+    width: 100%;
+    
+  }
+
+  .container img 
+  {
+    width: 100%;
+    height: auto;
+  }
+
+  .container .btn 
+  {
+    position: absolute;
+    top: 48%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .container .btn:hover {
+    background-color: black;
+  }
+
+  .container .btn2
+  { 
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+
+  }
+
+  .container .btn3
+  {
+    position: absolute;
+    top: 95%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+
+  }
+
+  .container .btn4
+  {
+    position: absolute;
+    top: 95%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+
+  }
+
+</style>
 </head>
 
 <body>
-<nav class="navbar navbar-default">
-
+<div class="container-fluid bg-3 text-center">
+  <h1>Resilience </h1>
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Me</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Quizzes</a></li>
-        <li><a href="#">Podcast</a></li>
-        <li><a href="#">Book Review</a></li>
-      </ul>
-    </div>
-  </div>
-
-</nav>
-
-
-
-<div class="container-fluid bg-3 text-center">    
-  <h3>Resilience? </h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Do you know what you are ?</p>
-    </div>
-    <div class="col-sm-4"> 
-      <p>Are you resilient?</p>
-    </div>
-    <div class="col-sm-4"> 
-      <p>Would</p>
-    </div>
-  </div>
+   <%= image_tag( 'resilience.jpg', width: '100%' )%>
+   <a href="/quizzes"><button class="btn">Personality Quiz</button></a>
+   <a href="/podcasts"> <button class="btn2">Podcast</button></a>
+   <a href="/quizzes"><button class="btn3">Button</button></a>
+   <a href="/bookreview"><button class="btn4">Book Review</button></a>
+ 
+   </div>
 </div>
+
+  <br>
+
+
 
 </body>
 </html>
+

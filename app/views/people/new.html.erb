@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Resilience Application </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<body>
+<h1> </h1>
+<%= form_with scope: :people, url: people_path, local: true do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :Name%>
+  </p>
+ 
+  <p>
+    <%= form.label :role %><br>
+    <%= form.text_area :Role %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+<body>
