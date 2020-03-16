@@ -7,6 +7,7 @@
   <style>
   .container 
   {
+
     position: relative;
     width: 100%;
     
@@ -15,17 +16,18 @@
   .container img 
   {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   .container .btn 
   {
+    font-family: Andale Mono, monospace;
     position: absolute;
     top: 48%;
     left: 80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
+    background-color: black;
     color: white;
     font-size: 16px;
     padding: 12px 24px;
@@ -36,17 +38,18 @@
   }
 
   .container .btn:hover {
-    background-color: black;
+    background-color: #555;
   }
 
   .container .btn2
   { 
+    font-family: Andale Mono, monospace;
     position: absolute;
     top: 45%;
     left: 12%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
+    background-color: black;
     color: white;
     font-size: 16px;
     padding: 12px 24px;
@@ -59,12 +62,13 @@
 
   .container .btn3
   {
+    font-family: Andale Mono, monospace;
     position: absolute;
     top: 95%;
     left: 12%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
+    background-color: black;
     color: white;
     font-size: 16px;
     padding: 12px 24px;
@@ -77,12 +81,13 @@
 
   .container .btn4
   {
+    font-family: Andale Mono, monospace;
     position: absolute;
     top: 95%;
     left: 80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
+    background-color: black;
     color: white;
     font-size: 16px;
     padding: 12px 24px;
@@ -100,7 +105,7 @@
 <div class="container-fluid bg-3 text-center">
   <h1>Resilience </h1>
   <div class="container">
-   <%= image_tag( 'resilience.jpg', width: '100%' )%>
+   <%= image_tag( 'resilience.jpg', width: '100%', height: '100%')%>
    <a href="/quizzes"><button class="btn">Personality Quiz</button></a>
    <a href="/podcasts"> <button class="btn2">Podcast</button></a>
    <a href="/quizzes"><button class="btn3">Button</button></a>
