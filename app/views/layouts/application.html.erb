@@ -13,7 +13,6 @@
   .nav
   {
     font-family: Andale Mono, monospace;
-   
     background-color: black;
     list-style:none;
     margin:0;
@@ -34,12 +33,15 @@
 </head>
 
 <body>
-  <ul class ="nav">
+  <ul class ="nav" style="text-align:center">
     <li><a class="active" href="/welcome">Home</a></li>
     <li><a href="/quizzes">Quizzes</a></li>
     <li><a href="/podcasts">Podcasts</a></li>
-    <li><a href="/bookreview">Book Review</a></li>
+    <li><a href="/bookreview">Book Review</a></li><li><a href="/poems">Poems</a></li>
   </ul>
     <%= yield %>
+    <footer>
+      <p>Engineering Management Group 02</p>
+    </footer>
 </body>
 </html>
