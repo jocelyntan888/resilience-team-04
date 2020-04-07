@@ -29,6 +29,10 @@
     color: white;
     padding:10px;
   }
+  footer
+  {
+    font-weight: bold;
+  }
   </style>     
 </head>
 
@@ -36,12 +40,13 @@
   <ul class ="nav" style="text-align:center">
     <li><a class="active" href="/welcome">Home</a></li>
     <li><a href="/quizzes">Quizzes</a></li>
-    <li><a href="/podcasts">Podcasts</a></li>
+    <li><a href="/podcasts">Podcast</a></li>
     <li><a href="/bookreview">Book Review</a></li><li><a href="/poems">Poems</a></li>
   </ul>
     <%= yield %>
-    <footer>
-      <p>Engineering Management Group 02</p>
-    </footer>
 </body>
+<footer>
+    <p style="text-align:center">Engineering Management Group 02</p>
+</footer>
+
 </html>

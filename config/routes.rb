@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/podcasts', to: 'welcome#podcasts'
   get '/bookreview', to: 'welcome#bookreview'
   get '/poems', to: 'welcome#poems'
+  get '/videos', to: 'welcome#videos'
   get 'welcome/index'
   root 'welcome#index'
   #root 'dashboard#index'
