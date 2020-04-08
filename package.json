@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c3970b002286e1162e29ae55946ab3843bbcc091bf113cc1382a9f262ff67e5f
-size 66
+{
+  "name": "railsapp",
+  "private": true,
+  "dependencies": {}
+}

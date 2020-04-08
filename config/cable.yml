@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:352a676baab617bf667002421d258edf4c7e0c7ef2db8cec94f75129bbb50a14
-size 190
+development:
+  adapter: async
+
+test:
+  adapter: async
+
+production:
+  adapter: redis
+  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+  channel_prefix: railsapp_production

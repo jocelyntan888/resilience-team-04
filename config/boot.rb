@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6a6aa54b6b96a3fde6cfdc0a5c59803d363609adcb76a0063c032a60971dbc51
-size 207
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __dir__)
+
+require 'bundler/setup' # Set up gems listed in the Gemfile.
+require 'bootsnap/setup' # Speed up boot time by caching expensive operations.

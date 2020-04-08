@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee267e5c52c9ea6a9125926daa2473feed85d43572e59e2e72501a5d9375e75d
-size 98
+# See http://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file

@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2870316a11d31fb724c1bbfbd67970f18272582226131f966801530431071c38
-size 1013
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Resilience Application </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style> 
+  h1
+  {
+    font-family: Palatino, serif;
+    text-align: center;
+  }
+  .nav
+  {
+    font-family: Andale Mono, monospace;
+    background-color: black;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+  }
+  .nav li
+  {
+    display:inline;
+  }
+  .nav a
+  {
+    display:inline-block;
+    color: white;
+    padding:10px;
+  }
+  footer
+  {
+    font-weight: bold;
+  }
+  </style>     
+</head>
+
+<body>
+  <ul class ="nav" style="text-align:center">
+    <li><a class="active" href="/welcome">Home</a></li>
+    <li><a href="/quizzes">Quizzes</a></li>
+    <li><a href="/podcasts">Podcast</a></li>
+    <li><a href="/bookreview">Book Review</a></li><li><a href="/poems">Poems</a></li>
+  </ul>
+    <%= yield %>
+</body>
+<footer>
+    <p style="text-align:center">Engineering Management Group 02</p>
+</footer>
+
+</html>

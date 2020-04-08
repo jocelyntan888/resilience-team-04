@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12656d43090727d98c72bed6ba153b501ae0b7fdc5f20cfd64b5ab8a8bfa87a8
-size 404
+# Be sure to restart your server when you modify this file.
+
+# You can add backtrace silencers for libraries that you're using but don't wish to see in your backtraces.
+# Rails.backtrace_cleaner.add_silencer { |line| line =~ /my_noisy_library/ }
+
+# You can also remove all the silencers if you're trying to debug a problem that might stem from framework code.
+# Rails.backtrace_cleaner.remove_silencers!
