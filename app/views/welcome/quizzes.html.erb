@@ -44,11 +44,23 @@ h1  {
     background-color: black;
 }
 
+.container2
+{
+    vertical-align: center;
+    height: 100%;
+    width: 100%;
+}
+
 #questionaire-title 
 {
     margin-top: 20vh;
     margin-bottom: 15vh;
     text-align: center;
+}
+
+.text
+{
+  text-align: center;
 }
 
 .hidden 
@@ -66,7 +78,46 @@ h1  {
     width: 100px;
 }
 
+.button2 
+{
+    cursor: pointer;
+    margin-left: 70%;
+    padding: 0px 20px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.button3
+{
+    cursor: pointer;
+    margin-left: 10%;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    position:relative;
+    top: 60px;
+
+}
+
 .button:hover 
+{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.button2:hover 
+{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.button3:hover 
 {
     background-color: rgba(255,255,255,0.1);
 }
@@ -109,6 +160,8 @@ h1  {
 }
 
 
+
+
   </style>
 </head>
 
@@ -116,7 +169,7 @@ h1  {
 
 <div class="fullpage black-bg centered">
         <div class="container start">
-            <h1 id="questionaire-title">What's your resilient character?</h1>
+            <h1 id="questionaire-title">Find out who you are based on your resilience!</h1>
             <div class="centered">
                 <div class="button" onclick="showPage(2); setupQuestion();">
                     <p>Begin Quiz</p>
@@ -130,9 +183,10 @@ h1  {
             <p id="personality-recommended"></p>
             <br>
             <div class="centered">
-                <div class="button" onclick="showPage(0); setupQuestion();">
+                <div class="button2" onclick="showPage(0); setupQuestion();">
                     <p>Restart</p>
                 </div>
+
             </div>
         </div>
         <div class="container hidden">
@@ -444,116 +498,19 @@ const questions = {
     }
   },
 
-   //Iman
-   question9: {
-    question:
-      "You have been in uni all night finishing an assignment and it is 9 am. You are so tired you can barely function but you have work in 20 minutes. What do you do?",
-    option0: {
-      type: "string",
-      content:
-        "Suck it up and go to work!",
-      personality: "Iman",
-      points: 1
-    },
-    option1: {
-      type: "string",
-      content:
-        "Even though it is hard I will try and push through and see what happens.",
-      personality: "Iman",
-      points: 0.75
-    },
-    option2: {
-      type: "string",
-      content: "Maybe I should call and tell my manager and see if I can go in later?",
-      personality: "Iman",
-      points: 0.5
-    },
-    option3: {
-      type: "string",
-      content:
-        "Pull a sickie for sure. It will help me regain my strength!",
-      personality: "Iman",
-      points: 0.25
-    }
-  },
-   question10: {
-    question:
-      "Working 50 hours a week and overloading at uni is taking its toll on you. What do you do?",
-    option0: {
-      type: "string",
-      content:
-        "With proper time management and knowing my goals, I can achieve anything",
-      personality: "Iman",
-      points: 1
-    },
-    option1: {
-      type: "string",
-      content:
-        "I’m a bit doubtful but I guess I will have to try? If I find it too hard I can always slow it down later.",
-      personality: "Iman",
-      points: 0.75
-    },
-    option2: {
-      type: "string",
-      content: "It might be better if I don’t put so much pressure on myself. Then I can work more effectively!",
-      personality: "Iman",
-      points: 0.5
-    },
-    option3: {
-      type: "string",
-      content:
-        "Work less and reduce the load to have some me time and recuperate",
-      personality: "Iman",
-      points: 0.25
-    }
-  },
-   question11: {
-    question:
-      "It is an exam day and you missed your alarm! You get yourself to your maths exam and realise you forgot your calculator! What do you do?",
-    option0: {
-      type: "string",
-      content:
-        "Adapt and improvise. Write the formulas out for questions and explain your situation at the end of the paper",
-      personality: "Iman",
-      points: 1
-    },
-    option1: {
-      type: "string",
-      content:
-        "I will only answer the questions that do not require complicated calculations",
-      personality: "Iman",
-      points: 0.5
-    },
-    option2: {
-      type: "string",
-      content: "I should talk to one of the invigilators, they might be able to help!",
-      personality: "Iman",
-      points: 0.75
-    },
-    option3: {
-      type: "string",
-      content:
-        "If I cry enough surely I can get a sup!",
-      personality: "Iman",
-      points: 0.25
-    }
-  },
 };
 
 // constant to store the description for each type of traveller
 const result = {
   Voldemort: [
-    "You are Voldemort"
+    "Click below to view your personality!" 
   ],
   Elon: [
-    "You are Elon!"
+    "Click below to view your personality!" 
   ],
   Joan: [
-    "You are Joan!" 
+    "Click below to view your personality!" 
   ],
-  Iman: [
-    "You are Iman!"
-  ]
 };
 
 // for keeping track of the score
@@ -561,7 +518,6 @@ var score = {
   Voldemort: 0,
   Elon: 0,
   Joan: 0,
-  Iman: 0
 };
 
 // for keep track of the current question
@@ -570,10 +526,10 @@ var currentQn = 0;
 // for setting up each of the questions
 function setupQuestion() {
   // find out the current percentage of completion and updates the css
-  var progress = 5 + currentQn * 9;
+  var progress = 5 + currentQn * 12;
   var progressbar = document.getElementById("progress");
   progressbar.style.width = progress + "%";
-  progressbar.innerText = currentQn + 1 + "/12";
+  progressbar.innerText = currentQn + 1 + "/9";
 
   // get the current questions content
   var qn = questions["question" + currentQn];
@@ -611,7 +567,6 @@ var score = {
   Voldemort: 0,
   Elon: 0,
   Joan: 0,
-  Iman: 0
 };
 
 // get the next questions, or display result if all questions were answered
@@ -636,17 +591,13 @@ function next() {
   {
     score["Joan"] += score2;
   }
-  else
-  {
-    score["Iman"] += score2;
-  }
   //score[personality]+=points;
   // increase the question count by 1
   currentQn = currentQn + 1;
   // unselect all options
   resetOptions();
   // check if quiz is completed
-  if (currentQn < 12) {
+  if (currentQn < 9) {
     // if quiz not completed, setup the next question
     setupQuestion();
   } else {
@@ -663,38 +614,28 @@ function next() {
       highestScore = score["Joan"];
       highestPersonality = "Joan";
     }
-    if (highestScore < score["Iman"]) {
-      highestScore = score["Iman"];
-      highestPersonality = "Iman";
-    }
     
     // get the description of the personality and update the result page
     var personalityResult = result[highestPersonality];
-    document.getElementById("personality-type").innerText = "Resilient Character : "
+    document.getElementById("personality-type").innerText = "Resilient Character : " 
       + highestPersonality;
-    document.getElementById("personality-part-1").innerText =
-      personalityResult[0];
+    document.getElementById("personality-part-1").innerHTML =
+      "<p class=\"text\">Click below to view your personality! </p><br>"
+      ;
     if(highestPersonality == "Voldemort")
     {
       document.getElementById("personality-part-2").innerHTML =
-      "<a href=\"/videos\">Click here to view your personality</a>"
+     "<div class=\"container2\"><video controls><source src = \"Podcast.mp4\" type = \"video/mp4\">This browser doesn't support video tag.</video></div><p class=\"text\">Blurb here</p> <br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
     }
     else if(highestPersonality == "Elon")
     {
-        document.getElementById("personality-part-2").innerHTML =
-      "<a href=\"/videos\">Click here to view your personality</a>"
+       document.getElementById("personality-part-2").innerHTML =
+      "<div class=\"container2\"><video controls><source src = \"Podcast.mp4\" type = \"video/mp4\">This browser doesn't support video tag.</video></div><p class=\"text\">Blurb here</p> <br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
     }
     else if(highestPersonality == "Joan")
     {
-      document.getElementById("personality-part-2").innerHTML =
-   "<a href=\"/videos\">Click here to view your personality</a>"
-
-    }
-    else
-    {
-      document.getElementById("personality-part-2").innerHTML =
-      "<a href=\"/videos\">Click here to view your personality</a>"
-
+     document.getElementById("personality-part-2").innerHTML =
+      "<div class=\"container2\"><video controls><source src = \"Podcast.mp4\" type = \"video/mp4\">This browser doesn't support video tag.</video></div><p class=\"text\">Blurb here</p> <br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
     }
     // set question count to 0 so that when the user wishes to retry, the quiz is on the right question count
     currentQn = 0;

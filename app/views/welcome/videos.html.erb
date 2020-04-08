@@ -7,7 +7,7 @@
   <style>
   .container 
   {
-
+    text-align:center;
     vertical-align: center;
     height: 100%;
     width: 100%;
@@ -17,16 +17,32 @@
   {
   	text-align:center;
   }
+
+  p
+  {
+    font-family: Palatino, serif;
+    text-align:center;
+  }
   </style>
  
 </head>
 
 <body>
-<h1> Videos will be here </h1>
+<h1> Videos </h1>
 <div class="container-fluid bg-3 text-center">
+<p> Elon Musk </p>
 <div class="container">
-<p> Video </p>
+<%= video_tag("Elon.mov", controls: true, width: '70%', height: '50%')%>
 </div>
+<p> Voldemort </p>
+<div class="container">
+<%= video_tag("Vold.mov", controls: true, width: '70%', height: '50%')%>
+</div>
+<p> Joan of Arc </p>
+<div class="container">
+<%= video_tag("Vold.mov", controls: true, width: '70%', height: '50%')%>
+</div>
+
 </div>
  
 </body>
