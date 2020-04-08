@@ -18,12 +18,6 @@ h1  {
 .fullpage {
     height: 100vh;
     width: 100vw;
-<<<<<<< HEAD
-    font-family: 'arial';
-    color: white;
-    font-size: smaller;
-=======
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
 }
 
 .black-bg 
@@ -40,29 +34,13 @@ h1  {
 
 .container 
 {
-<<<<<<< HEAD
-    height: 80vh;
-    width: 85vw;
-    max-width: 80%;
-=======
     height: 90vh;
     width: 85vw;
     max-width: 700px;
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
     padding: 10px;
     background-color: black;
 }
 
-<<<<<<< HEAD
-.container2
-{
-    vertical-align: center;
-    height: 100%;
-    width: 100%;
-}
-
-=======
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
 #questionaire-title 
 {
     margin-top: 20vh;
@@ -70,14 +48,6 @@ h1  {
     text-align: center;
 }
 
-<<<<<<< HEAD
-.text
-{
-  text-align: center;
-}
-
-=======
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
 .hidden 
 {
     display: none;
@@ -93,56 +63,11 @@ h1  {
     width: 100px;
 }
 
-<<<<<<< HEAD
-.button2 
-{
-    cursor: pointer;
-    margin-left: 60%;
-    padding: 0px 20px;
-    border: 2px solid cyan;
-    border-radius: 5px;
-    text-align: center;
-    width: 100px;
-}
-
-.button3
-{
-    cursor: pointer;
-    margin-left: 10%;
-    border: 2px solid cyan;
-    border-radius: 5px;
-    text-align: center;
-    width: 100px;
-    color: white;
-    text-decoration: none;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    position:relative;
-    top: 60px;
-
-}
-
-=======
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
 .button:hover 
 {
     background-color: rgba(255,255,255,0.1);
 }
 
-<<<<<<< HEAD
-.button2:hover 
-{
-    background-color: rgba(255,255,255,0.1);
-}
-
-.button3:hover 
-{
-    background-color: rgba(255,255,255,0.1);
-}
-
-=======
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
 #progress-bar 
 {
     width: 100%;
@@ -181,11 +106,6 @@ h1  {
 }
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
   </style>
 </head>
 
@@ -193,17 +113,10 @@ h1  {
 
 <div class="fullpage black-bg centered">
         <div class="container start">
-<<<<<<< HEAD
-            <h1 id="questionaire-title">Find out who you are based on your resilience!</h1>
-            <div class="centered">
-                <div class="button" onclick="showPage(2); setupQuestion();">
-                    <p>Begin Quiz</p>
-=======
             <h1 id="questionaire-title">Are you resilient?</h1>
             <div class="centered">
                 <div class="button" onclick="showPage(2); setupQuestion();">
                     <p>START</p>
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
                 </div>
             </div>
         </div>
@@ -214,58 +127,6 @@ h1  {
             <p id="personality-recommended"></p>
             <br>
             <div class="centered">
-<<<<<<< HEAD
-                <div class="button2" onclick="showPage(0); setupQuestion();">
-                    <p>Restart</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="container hidden">
-            <div id="progress-bar">
-                <div id="progress">1/5</div>
-            </div>
-            <h2 id="question"></h2>
-            <div class="option" id="option0" onclick="select(this)">
-                <input type="radio" name="answer" value="0" onchange="next()">
-                <div class="content centered">
-                </div>
-                <br>
-            </div>
-            <div class="option" id="option1" onclick="select(this)">
-                <input type="radio" name="answer" value="1" onchange="next()">
-                <div class="content centered">
-                </div>
-                <br>
-            </div>
-            <div class="option" id="option2" onclick="select(this)">
-                <input type="radio" name="answer" value="2" onchange="next()">
-                <div class="content centered">
-                </div>
-                <br>
-            </div>
-            <div class="option" id="option3" onclick="select(this)">
-                <input type="radio" name="answer" value="3" onchange="next()">
-                <div class="content centered">
-                </div>
-                <br>
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/scripts.js"></script>
-</body>
-<script>
-//Questions and Answers for the Quiz
-const questions = {
-  question0: {
-    question: "You grow up in an orphanage in a hostile environment and are not accepted by the people around you. What is your attitude?",
-    option0: {
-      type: "string",
-      content:
-        "I will work hard to be better than everyone and one day they will regret treating me this way.",
-      personality: "Voldemort",
-=======
                 <div class="button" onclick="showPage(0); setupQuestion();">
                     <p>Restart</p>
                 </div>
@@ -494,24 +355,11 @@ const questions = {
       content:
         "Embrace them and listen to them they might be a word of god ",
       personality: "Joan",
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
       points: 1
     },
     option1: {
       type: "string",
       content:
-<<<<<<< HEAD
-        "Not everyone will be like this. I just have to work hard and be kind to others so they are kind to me",
-      personality: "Voldemort",
-      points: 0.25
-    },
-    option2: {
-      type: "string",
-      content:
-        "Maybe I’m not accepted because there’s something wrong with me. Maybe I need to change who I am",
-      personality: "Voldemort",
-      points: 0.5
-=======
         "They’re annoying but I will see what they say",
       personality: "Joan",
       points: 0.75
@@ -521,81 +369,10 @@ const questions = {
       content: "I might wanna go to the therapist ",
       personality: "Joan",
       points: 0.50
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
     },
     option3: {
       type: "string",
       content:
-<<<<<<< HEAD
-        "Some people are just mean and you need to protect yourself from them",
-      personality: "Voldemort",
-      points: 0.75
-    }
-  },
-  question1: {
-    question: "You are very close to achieving your goal and everything is going according to plan. Just as you are about to succeed, an enemy ruins everything. What do you do?",
-    option0: {
-      type: "string",
-      content: "Ask my enemy to be nicer to me! Maybe they’ll understand if I talk to them!",
-      personality: "Voldemort",
-      points: 0.25
-    },
-    option1: {
-      type: "string",
-      content: "This ruins everything! I’m going to give up",
-      personality: "Voldemort",
-      points: 0.5
-    },
-    option2: {
-      type: "string",
-      content: "Maybe I should try to achieve my goal even though my resources have been depleted, fingers crossed!",
-      personality: "Voldemort",
-      points: 0.75
-    },
-    option3: {
-      type: "string",
-      content: "I will rise again and achieve my goals by being patient, regrouping and waiting for the right time.",
-      personality: "Voldemort",
-      points: 1
-    }
-  },
-  question2: {
-    question: "For a second time, your enemy defeats you.",
-    option0: {
-      type: "string",
-      content: "That’s it! I quit! Failing twice is just too embarrassing!",
-      personality: "Voldemort",
-      points: 0.5
-    },
-    option1: {
-      type: "string",
-      content: "Maybe I should stop fighting my enemy and join their side. If they keep winning maybe they are right.",
-      personality: "Voldemort",
-      points: 0.25
-    },
-    option2: {
-      type: "string",
-      content: "It’s okay. Maybe I can’t do this alone. I should ask for help from my friends.",
-      personality: "Voldemort",
-      points: 1
-    },
-    option3: {
-      type: "string",
-      content: "I’ll try defeating them again the same way. I don’t need help.",
-      personality: "Voldemort",
-      points: 0.75
-    }
-  },
-  //Elon
-  question3: {
-    question:
-      "You believe in a greener future but everyone is against you and they don’t think your ideas are achievable. What do you do?",
-    option0: {
-      type: "string",
-      content:
-        "Keep going with these ideas! You have a clear vision and know they are achievable!",
-      personality: "Elon",
-=======
         "I am defo crazy ",
       personality: "Joan",
       points: 0.25
@@ -609,23 +386,11 @@ const questions = {
       content:
         "Not accept this forced upon you and do anything to stop it ",
       personality: "Joan",
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
       points: 1
     },
     option1: {
       type: "string",
       content:
-<<<<<<< HEAD
-        "Everyone disagrees with me... I should change my ideas to make them more appealing.",
-      personality: "Elon",
-      points: 0.5
-    },
-    option2: {
-      type: "string",
-      content: "Maybe I should tone it down a bit but still aim for the same outcomes.",
-      personality: "Elon",
-      points: 0.75
-=======
         "I guess I have to do it maybe I can think of a solution later ",
       personality: "Joan",
       points: 0.75
@@ -635,55 +400,10 @@ const questions = {
       content: "I dont really want to but do not seem to have a choice ",
       personality: "Joan",
       points: 0.5
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
     },
     option3: {
       type: "string",
       content:
-<<<<<<< HEAD
-        "Everyone disagrees with me... I should change my world view to match theirs because that’s easier.",
-      personality: "Elon",
-      points: 0.25
-    }
-  },
-  question4: {
-    question:
-      "You try something daring and fail instantly and publicly. What do you do?",
-    option0: {
-      type: "string",
-      content: "Ignore the haters and try again instantly! I can do this because I believe it is the right thing to do!",
-      personality: "Elon",
-      points: 0.75
-    },
-    option1: {
-      type: "string",
-      content: "That’s embarrassing! I’m going to direct my efforts elsewhere.",
-      personality: "Elon",
-      points: 0.25
-    },
-    option2: {
-      type: "string",
-      content: "Use this as a lesson and spend some time refining my work to ensure that this failure doesn’t happen again!",
-      personality: "Elon",
-      points: 1
-    },
-    option3: {
-      type: "string",
-      content: "Use the failure as a publicity stunt! Any publicity is good publicity. It might help you get more funding for your work!",
-      personality: "Elon",
-      points: 0.5
-    }
-  },
-  question5: {
-    question:
-      "After a few good years of business success, you are suddenly on the verge of going bankrupt. What do you do?",
-    option0: {
-      type: "string",
-      content:
-        "Maybe I should think of working in a different career.",
-      personality: "Elon",
-      points: 0.25
-=======
         "Might as well. It might be a nice experience ",
       personality: "Joan",
       points: 0.25
@@ -698,52 +418,23 @@ const questions = {
         "There is no way I would deny anything I believe in ",
       personality: "Joan",
       points: 1
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
     },
     option1: {
       type: "string",
       content:
-<<<<<<< HEAD
-        "This is quite hard but I will try to come back from this by being passionate.",
-      personality: "Elon",
-=======
         "I don’t think I should deny my beliefs even if it frees me",
       personality: "Joan",
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
       points: 0.75
     },
     option2: {
       type: "string",
-<<<<<<< HEAD
-      content: "I might be better off going bankrupt and using this as a lesson.",
-      personality: "Elon",
-=======
       content: "Maybe I should just lie and get out",
       personality: "Joan",
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
       points: 0.5
     },
     option3: {
       type: "string",
       content:
-<<<<<<< HEAD
-        "This is not a defeat. I just need to work harder and put in more effort. I will come back from this by pursuing my ideas and making the necessary changes.",
-      personality: "Elon",
-      points: 1
-    }
-  },
-
-  //Joan
-   question6: {
-    question:
-      "You suddenly start hearing voices as a teenager. What do you do?",
-    option0: {
-      type: "string",
-      content:
-        "I am going insane and should get some sort of help to get rid of them!",
-      personality: "Joan",
-      points: 0.25
-=======
         "I will lie who cares what they think  ",
       personality: "Joan",
       points: 0.25
@@ -760,51 +451,23 @@ const questions = {
         "Suck it up and go to work ",
       personality: "Iman",
       points: 1
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
     },
     option1: {
       type: "string",
       content:
-<<<<<<< HEAD
-        "They’re annoying but I will see what they say.",
-      personality: "Joan",
-=======
         "Even though it is hard I will try and push through and see what happens ",
       personality: "Iman",
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
       points: 0.75
     },
     option2: {
       type: "string",
-<<<<<<< HEAD
-      content: "Maybe it’s God? I should listen and see what He says!",
-      personality: "Joan",
-      points: 1
-=======
       content: "Maybe I should call and tell my manager and see if I can go in later",
       personality: "Iman",
       points: 0.5
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
     },
     option3: {
       type: "string",
       content:
-<<<<<<< HEAD
-        "I think I should block them out and just live a normal life",
-      personality: "Joan",
-      points: 0.5
-    }
-  },
-   question7: {
-    question:
-      "You have big plans for the future but they are abruptly stopped when your family force you to marry at a very young age. How do you deal with this?",
-    option0: {
-      type: "string",
-      content:
-        "I won’t accept this! I refuse to have this forced upon me and will do anything to stop it!",
-      personality: "Joan",
-      points: 0.75
-=======
         "Pull a sickie for sure ",
       personality: "Iman",
       points: 0.25
@@ -819,22 +482,10 @@ const questions = {
         "With proper time management and knowing my goals I can achieve anything ",
       personality: "Iman",
       points: 1
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
     },
     option1: {
       type: "string",
       content:
-<<<<<<< HEAD
-        "I guess I have to do it now and maybe I can think of a solution later to get out of this.",
-      personality: "Joan",
-      points: 0.5
-    },
-    option2: {
-      type: "string",
-      content: "I refuse to do this! But I don’t want my family to cast me out. Maybe there’s a way I can think through this and convince them that I can’t.",
-      personality: "Joan",
-      points: 1
-=======
         "I’m a bit doubtful but I guess I will have to try  ",
       personality: "Iman",
       points: 0.75
@@ -844,26 +495,10 @@ const questions = {
       content: "It might be better if I don’t put so much pressure on myself ",
       personality: "Iman",
       points: 0.5
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
     },
     option3: {
       type: "string",
       content:
-<<<<<<< HEAD
-        "I guess I have to do what they say. My family will be proud of me!",
-      personality: "Joan",
-      points: 0.25
-    }
-  },
-   question8: {
-    question:
-      "You are imprisoned for your beliefs but can easily be freed if you change your ways and deny your beliefs. What do you do?",
-    option0: {
-      type: "string",
-      content:
-        "There is no way I would deny anything I believe in!",
-      personality: "Joan",
-=======
         "Work less and reduce the load ",
       personality: "Iman",
       points: 0.25
@@ -877,204 +512,24 @@ const questions = {
       content:
         "Adapt and improvise. Write the formula for questions and explain your situation in the end of the paper ",
       personality: "Iman",
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
       points: 1
     },
     option1: {
       type: "string",
       content:
-<<<<<<< HEAD
-        "I don’t think I should deny my beliefs. Maybe I can try to convince my captors that my beliefs are right!",
-      personality: "Joan",
-=======
         "I will only answer the questions that do not require complicated calculations ",
       personality: "Iman",
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
       points: 0.75
     },
     option2: {
       type: "string",
-<<<<<<< HEAD
-      content: "Maybe I should just lie and say I deny my beliefs!",
-      personality: "Joan",
-=======
       content: "I should talk to one of the invigilators ",
       personality: "Iman",
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
       points: 0.5
     },
     option3: {
       type: "string",
       content:
-<<<<<<< HEAD
-        "I’ll believe whatever you want me to! Just let me go!",
-      personality: "Joan",
-      points: 0.25
-    }
-  },
-
-};
-
-// constant to store the description for each type of traveller
-const result = {
-  Voldemort: [
-    "Click below to view your personality!" 
-  ],
-  Elon: [
-    "Click below to view your personality!" 
-  ],
-  Joan: [
-    "Click below to view your personality!" 
-  ],
-};
-
-// for keeping track of the score
-var score = {
-  Voldemort: 0,
-  Elon: 0,
-  Joan: 0,
-};
-
-// for keep track of the current question
-var currentQn = 0;
-
-// for setting up each of the questions
-function setupQuestion() {
-  // find out the current percentage of completion and updates the css
-  var progress = 5 + currentQn * 12;
-  var progressbar = document.getElementById("progress");
-  progressbar.style.width = progress + "%";
-  progressbar.innerText = currentQn + 1 + "/9";
-
-  // get the current questions content
-  var qn = questions["question" + currentQn];
-  var qnText = document.getElementById("question");
-  qnText.innerText = qn.question;
-
-  // updates each of the options for the current question
-  for (var i = 0; i < 4; i++) {
-    var option = document.getElementById("option" + i);
-    var content = option.getElementsByClassName("content")[0];
-    var qnOption = qn["option" + i];
-    var htmlStr = "<p>" + qnOption.content + "</p>";
-    content.innerHTML = htmlStr;
-  }
-}
-
-// to unselect all of the options
-function resetOptions() 
-{
-  var btn = document.getElementsByTagName("input");
-  btn[0].checked = false;
-  btn[1].checked = false;
-  btn[2].checked = false;
-  btn[3].checked = false;
-}
-
-// to select the option that is clicked
-function select(element) {
-  var btn = element.getElementsByTagName("input")[0];
-  btn.checked = true;
-  next();
-}
-
-var score = {
-  Voldemort: 0,
-  Elon: 0,
-  Joan: 0,
-};
-
-// get the next questions, or display result if all questions were answered
-function next() {
-  // get the current select option
-  var ans = $("input[name=answer]:checked").val();
-  var qn = questions["question" + currentQn];
-  // get the personality type for the option selected
-  var personality = qn["option" + ans].personality;
-  var score2 = qn["option" + ans].points;
-  // increase the score of the personality by one
-  //Adding points to the specifc personality 
-  if(personality == "Voldemort")
-  {
-    score["Voldemort"]+= score2;
-  }
-  else if(personality == "Elon")
-  {
-    score["Elon"] += score2;
-  }
-  else if(personality == "Joan")
-  {
-    score["Joan"] += score2;
-  }
-  //score[personality]+=points;
-  // increase the question count by 1
-  currentQn = currentQn + 1;
-  // unselect all options
-  resetOptions();
-  // check if quiz is completed
-  if (currentQn < 9) {
-    // if quiz not completed, setup the next question
-    setupQuestion();
-  } else {
-    // else quiz is completed
-    // assume that the highest score is the adventurous personality
-    // and go through each of the personality type, and update the highest score and personality
-    var highestScore = score["Voldemort"];
-    var highestPersonality = "Voldemort";
-    if (highestScore < score["Elon"]) {
-      highestScore = score["Elon"];
-      highestPersonality = "Elon";
-    }
-    if (highestScore < score["Joan"]) {
-      highestScore = score["Joan"];
-      highestPersonality = "Joan";
-    }
-    
-    // get the description of the personality and update the result page
-    var personalityResult = result[highestPersonality];
-    document.getElementById("personality-type").innerText = "Resilient Character : " 
-      + highestPersonality;
-    document.getElementById("personality-part-1").innerHTML =
-      "<p class=\"text\">Click below to view your personality! </p><br>"
-      ;
-    if(highestPersonality == "Voldemort")
-    {
-      document.getElementById("personality-part-2").innerHTML =
-     "<p class=\"text\">Moral disposition aside, you have overcome your fair share of challenges. <br>How did you do it? <br> Well, a key pattern in your life has always been a relative abundance of mentors, friends and colleagues supporting you along the way. <br>Never afraid to leverage these networks, you were able to use their support to help you find resilience and rebound from defeat (Stevenson & Conradson 2017, Wong & Liamputtong 2018).<br>Your strengths include knowing when to ask for help and being willing to rely on others, this is your tactic for resilience (HealthDirect 2019).<br>Your weaknesses (may) include a twisted moral compass.</p> <br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
-    }
-    else if(highestPersonality == "Elon")
-    {
-       document.getElementById("personality-part-2").innerHTML =
-          "<p class=\"text\">Moral disposition aside, you have overcome your fair share of challenges. <br>How did you do it? <br> Well, a key pattern in your life has always been a relative abundance of mentors, friends and colleagues supporting you along the way. <br>Never afraid to leverage these networks, you were able to use their support to help you find resilience and rebound from defeat (Stevenson & Conradson 2017, Wong & Liamputtong 2018).<br>Your strengths include knowing when to ask for help and being willing to rely on others, this is your tactic for resilience (HealthDirect 2019).<br>Your weaknesses (may) include a twisted moral compass.</p> <br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
-    }
-    else if(highestPersonality == "Joan")
-    {
-     document.getElementById("personality-part-2").innerHTML =
-        "<p class=\"text\">Moral disposition aside, you have overcome your fair share of challenges. <br>How did you do it? <br> Well, a key pattern in your life has always been a relative abundance of mentors, friends and colleagues supporting you along the way. <br>Never afraid to leverage these networks, you were able to use their support to help you find resilience and rebound from defeat (Stevenson & Conradson 2017, Wong & Liamputtong 2018).<br>Your strengths include knowing when to ask for help and being willing to rely on others, this is your tactic for resilience (HealthDirect 2019).<br>Your weaknesses (may) include a twisted moral compass.</p> <br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
-    }
-    // set question count to 0 so that when the user wishes to retry, the quiz is on the right question count
-    currentQn = 0;
-    showPage(1);
-  }
-}
-
-// bringing relevant page into view 
-// page 0: Starting quiz of page
-// page 1: Results page 
-// page 2: quiz
-function showPage(num) {
-  var pages = document.getElementsByClassName("container");
-  pages[0].style.display = "none";
-  pages[1].style.display = "none";
-  pages[2].style.display = "none";
-  pages[num].style.display = "block";
-}
-
-  </script>
-<footer>
-    <p style="text-align:center">Engineering Management Group 02</p>
-</footer>
-=======
         "If you cry enough surely you can get a sup ",
       personality: "Iman",
       points: 0.25
@@ -1258,5 +713,4 @@ function showPage(num) {
 
   </script>
 
->>>>>>> 2446a9f3051e05120c331bb1fff795d0eaed4206
 </html>
