@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a30fbd85c291be7205153650b46a99081cfb0dcd278a69b8b66ef391957fd4ca
-size 227
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
+
+require_relative 'config/application'
+
+Rails.application.load_tasks
