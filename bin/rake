@@ -1,9 +1,3 @@
-#!/usr/bin/env ruby
-begin
-  load File.expand_path('../spring', __FILE__)
-rescue LoadError => e
-  raise unless e.message.include?('spring')
-end
-require_relative '../config/boot'
-require 'rake'
-Rake.application.run
+version https://git-lfs.github.com/spec/v1
+oid sha256:a502332225adc3d3dc842e29c543ce6d09433d35eee66d43f164ed031c9bf9e8
+size 213

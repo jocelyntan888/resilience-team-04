@@ -1,31 +1,3 @@
-#!/usr/bin/env ruby
-require 'fileutils'
-include FileUtils
-
-# path to your application root.
-APP_ROOT = File.expand_path('..', __dir__)
-
-def system!(*args)
-  system(*args) || abort("\n== Command #{args} failed ==")
-end
-
-chdir APP_ROOT do
-  # This script is a way to update your development environment automatically.
-  # Add necessary update steps to this file.
-
-  puts '== Installing dependencies =='
-  system! 'gem install bundler --conservative'
-  system('bundle check') || system!('bundle install')
-
-  # Install JavaScript dependencies if using Yarn
-  # system('bin/yarn')
-
-  puts "\n== Updating database =="
-  system! 'bin/rails db:migrate'
-
-  puts "\n== Removing old logs and tempfiles =="
-  system! 'bin/rails log:clear tmp:clear'
-
-  puts "\n== Restarting application server =="
-  system! 'bin/rails restart'
-end
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2969ba3b7d4033e57a6e35958521dd62c8d3b2b58e40015ccf5593b1e882d70
+size 819

@@ -1,4 +1,3 @@
-# Be sure to restart your server when you modify this file.
-
-# Configure sensitive parameters which will be filtered from the log file.
-Rails.application.config.filter_parameters += [:password]
+version https://git-lfs.github.com/spec/v1
+oid sha256:eb293cbcac26012fb63489b355b7a68df2e0f5006abe79e2128752f40514aaf4
+size 194

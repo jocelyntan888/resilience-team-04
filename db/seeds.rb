@@ -1,7 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+version https://git-lfs.github.com/spec/v1
+oid sha256:d9c79337dccdc9b57ff7d70f4a4841281716421f5c7982c8564cd77c7ff3b311
+size 370
