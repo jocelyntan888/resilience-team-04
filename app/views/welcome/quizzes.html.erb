@@ -39,7 +39,7 @@ h1  {
 {
     height: 108vh;
     width: 75vw;
-    max-width: 90%;
+    max-width: 100%;
     padding: 10px;
     background-color: black;
 }
@@ -90,29 +90,31 @@ h1  {
 {
     cursor: pointer;
     margin-left: 66%;
-    padding: 0.5% 2.5%;
+    padding: 0.4% 2.5%;
     border: 2px solid cyan;
     border-radius: 5px;
     text-align: center;
     width: 18%;
+    position:relative;
+    top: 80px;
     
 }
 
 .button3
 {
     cursor: pointer;
-    margin-left: 5%;
+    margin-left: -50%;
     border: 2px solid cyan;
     border-radius: 5px;
     text-align: center;
     width: 20%;
     color: white;
     text-decoration: none;
-    padding: 2.5% 3%;
+    padding: 2.0% 2.5%;
     text-align: center;
     text-decoration: none;
     position: relative;
-    top: 65px;
+    top: 140px;
 
 }
 
@@ -626,20 +628,19 @@ function next() {
     
     // get the description of the personality and update the result page
     var personalityResult = result[highestPersonality];
-    document.getElementById("personality-type").innerText = "Click below to view your personality! "  ;
     
     if(highestPersonality == "Voldemort")
     {document.getElementById("personality-part-2").innerHTML = 
-     "<br><br><div class=\"containervideo\"><iframe width=\"75%\" height=\"400\" src=\"https://www.youtube.com/embed/yi3UsKA5KCY\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe></div><br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
+     "<div class=\"containervideo\"><h1 style=\"text-align:center\">Click below to view your personality!</h1><br><br><iframe width=\"75%\" height=\"400\" src=\"https://www.youtube.com/embed/yi3UsKA5KCY\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe></div><br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
     }
     else if(highestPersonality == "Elon")
     { document.getElementById("personality-part-2").innerHTML = 
-      "<br><br><div class=\"containervideo\"><iframe width=\"75%\" height=\"400\" src=\"https://www.youtube.com/embed/dyPyM6UeLkQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe></div><br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
+      "<div class=\"containervideo\"><h1 style=\"text-align:center\">Click below to view your personality!</h1><br><br><div class=\"containervideo\"><iframe width=\"75%\" height=\"400\" src=\"https://www.youtube.com/embed/dyPyM6UeLkQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe></div><br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
     }
     else if(highestPersonality == "Joan")
     {
      document.getElementById("personality-part-2").innerHTML = 
-    "<br><br><div class=\"containervideo\"><iframe width=\"75%\" height=\"400\" src=\"https://www.youtube.com/embed/LsqzAKyBJsA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe></div><br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
+    "<div class=\"containervideo\"><h1 style=\"text-align:center\">Click below to view your personality!</h1><br><br><div class=\"containervideo\"><iframe width=\"75%\" height=\"400\" src=\"https://www.youtube.com/embed/LsqzAKyBJsA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe></div><br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
     }
     // set question count to 0 so that when the user wishes to retry, the quiz is on the right question count
     currentQn = 0;
