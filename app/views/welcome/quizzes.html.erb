@@ -16,11 +16,13 @@ h1  {
 }
 
 .fullpage {
-    height: 120vh;
-    width: 100vw;
+    margin-top:5%;
+    height: 1000px;
+    width: 80%;
     font-family: 'arial';
     color: white;
     font-size: smaller;
+    margin-left:10%;
 }
 
 .black-bg 
@@ -37,9 +39,8 @@ h1  {
 
 .container 
 {
-    height: 108vh;
-    width: 75vw;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
     padding: 10px;
     background-color: black;
 }
@@ -50,6 +51,9 @@ h1  {
   text-align:center;
   height:100%;
   width:100%;
+  overflow: hidden;
+  padding-top: 6.25%;
+  position:relative;
 }
 
 .container2
@@ -58,6 +62,16 @@ h1  {
     height: 100%;
     width: 100%;
 }
+
+.containerF
+{
+    vertical-align: center;
+    height: 120%;
+    width: 100%;
+    position:relative;
+}
+
+
 
 #questionaire-title 
 {
@@ -89,21 +103,24 @@ h1  {
 .button2 
 {
     cursor: pointer;
-    margin-left: 66%;
-    padding: 0.4% 2.5%;
+    margin-left: 58%;
+    padding: 0.7% 2.8%;
     border: 2px solid cyan;
     border-radius: 5px;
     text-align: center;
     width: 18%;
     position:relative;
-    top: 80px;
+    margin-top:-0.4%;
+    margin-bottom:5%;
     
 }
 
 .button3
 {
     cursor: pointer;
-    margin-left: -50%;
+    margin-left: 38%;
+    margin-top:900%;
+    margin-bottom:1.5%;
     border: 2px solid cyan;
     border-radius: 5px;
     text-align: center;
@@ -113,11 +130,33 @@ h1  {
     padding: 2.0% 2.5%;
     text-align: center;
     text-decoration: none;
-    position: relative;
-    top: 140px;
+    position:absolute;
+    bottom:-95px;
+    margin-bottom: 1.0%;
+
 
 }
 
+.button4
+{
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 900%;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    color: white;
+    text-decoration: none;
+    padding: 2.0% 2.5%;
+    text-align: center;
+    text-decoration: none;
+    position:absolute;
+    bottom:-95px;
+    margin-bottom: 1.0%;
+   
+
+}
 .button:hover 
 {
     background-color: rgba(255,255,255,0.1);
@@ -129,6 +168,11 @@ h1  {
 }
 
 .button3:hover 
+{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.button4:hover 
 {
     background-color: rgba(255,255,255,0.1);
 }
@@ -631,16 +675,16 @@ function next() {
     
     if(highestPersonality == "Voldemort")
     {document.getElementById("personality-part-2").innerHTML = 
-     "<div class=\"containervideo\"><h1 style=\"text-align:center\">Click below to view your personality!</h1><br><br><iframe width=\"75%\" height=\"400\" src=\"https://www.youtube.com/embed/yi3UsKA5KCY\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe></div><br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
+     "<div class=\"containerF\"><div class=\"containervideo\"><h1 style=\"text-align:center\">Click below to view your personality!</h1><br><br><iframe width=\"75%\" height=\"400\" src=\"https://www.youtube.com/embed/yi3UsKA5KCY\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe></div><a class=\"button3\" href=\"/videos\">Click here to view other characters</a><br><a class=\"button4\" href=\"/podcasts\">Click here to view podcasts</a></div>"
     }
     else if(highestPersonality == "Elon")
     { document.getElementById("personality-part-2").innerHTML = 
-      "<div class=\"containervideo\"><h1 style=\"text-align:center\">Click below to view your personality!</h1><br><br><div class=\"containervideo\"><iframe width=\"75%\" height=\"400\" src=\"https://www.youtube.com/embed/dyPyM6UeLkQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe></div><br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
+      "<div class=\"containerF\"><div class=\"containervideo\"><h1 style=\"text-align:center\">Click below to view your personality!</h1><br><br><iframe width=\"75%\" height=\"400\" src=\"https://www.youtube.com/embed/dyPyM6UeLkQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe></div><a class=\"button3\" href=\"/videos\">Click here to view other characters</a><br><a class=\"button4\" href=\"/podcasts\">Click here to view podcasts</a></div>"
     }
     else if(highestPersonality == "Joan")
     {
      document.getElementById("personality-part-2").innerHTML = 
-    "<div class=\"containervideo\"><h1 style=\"text-align:center\">Click below to view your personality!</h1><br><br><div class=\"containervideo\"><iframe width=\"75%\" height=\"400\" src=\"https://www.youtube.com/embed/LsqzAKyBJsA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe></div><br><a class=\"button3\" href=\"/videos\">Click here to view other characters</a>"
+    "<div class=\"containerF\"><div class=\"containervideo\"><h1 style=\"text-align:center\">Click below to view your personality!</h1><br><br><iframe width=\"75%\" height=\"400\" src=\"https://www.youtube.com/embed/LsqzAKyBJsA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe></div><a class=\"button3\" href=\"/videos\">Click here to view other characters</a><br><a class=\"button4\" href=\"/podcasts\">Click here to view podcasts</a></div>"
     }
     // set question count to 0 so that when the user wishes to retry, the quiz is on the right question count
     currentQn = 0;
