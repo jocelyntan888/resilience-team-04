@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/poems', to: 'welcome#poems'
   get '/videos', to: 'welcome#videos'
    get '/references', to: 'welcome#references'
+    get '/videos', to: 'welcome#videos'
   get 'welcome/index'
   root 'welcome#index'
   #root 'dashboard#index'
